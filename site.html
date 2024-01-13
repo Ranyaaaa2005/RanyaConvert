@@ -1,0 +1,187 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Conversion Lesson</title>
+    <link rel="stylesheet" href="styles.css">
+	</head>
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            position: center;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .lesson-content {
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .conversion-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ffccff;
+            color: #333;
+            padding: 10px;
+            border: 2px solid #ffccff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #dddddd;
+            color: #000;
+        }
+
+        .results {
+            margin-top: 15px;
+        }
+
+</style>
+<body>
+    <header>
+        <h1>Leçon sur la conversion des nombres</h1>
+    </header>
+
+    <main>
+        <section class="lesson-content">
+            <h2>Aperçu de la leçon</h2>
+            <p>
+                Dans cette leçon, vous allez apprendre à convertir des nombres entre octal, décimal, hexadécimal et binaire.
+            </p>
+            <p>
+                Nous aborderons les principes de base et fournirons des exemples pour chaque type de conversion.
+            </p>
+		<h3>1.Conversion Décimale vers Binaire, Octal et Hexadécimale</h3>	
+		<h4>Décimale vers Binaire</h4>
+La conversion d'un nombre décimal en binaire consiste à diviser le nombre décimal par 2 de manière répétée, en prenant chaque fois le reste comme le chiffre binaire le moins significatif. Le résultat est lu en ordre inverse. Par exemple, pour convertir 13 en binaire :
+13/2=6, reste 1<br>
+6/2=3, reste 0<br>
+3/2=1, reste 1<br>
+1/2=0, reste 1<br>
+<br>La lecture du reste dans l'ordre inverse donne 1101, qui est la représentation binaire de 13.
+​<h4>Décimale vers Octal</h4>
+<p>La conversion en octal est similaire à la conversion en binaire, mais en divisant par 8 au lieu de 2. Pour convertir 13 en octal :</p><br>
+13 ÷ 8 = 1, reste 5<br>
+1 ÷ 8 = 0, reste 1<br>
+<br>La lecture du reste dans l'ordre inverse donne 15, qui est la représentation octale de 13.
+​<h4>Décimale vers Hexadécimale</h4>
+<p>La conversion en hexadécimal implique de diviser par 16. Pour convertir 13 en hexadécimal :</p><br>
+13 ÷ 16 = 0, reste 13 (représenté comme D en hexadécimal)<br>
+La lecture du reste donne D, qui est la représentation hexadécimale de 13.
+<h3>2. Conversion Binaire, Octale et Hexadécimale vers Décimale</h3>
+<h4>Binaire vers Décimal</h4>
+<p>La conversion d'un nombre binaire en décimal consiste à multiplier chaque chiffre binaire par 2 élevé à la puissance correspondante et à additionner les résultats. Par exemple, pour convertir 1101 en décimal :</p><br>
+1 × 2^3 + 1 × 2^2 + 0 × 2^1 + 1 × 2^0 = 8 + 4 + 0 + 1 = 13<br>
+<h4>Octal vers Décimal</h4>
+<p>La conversion d'un nombre octal en décimal suit le même principe, en utilisant 8 comme base. Par exemple, pour convertir 15 en décimal :</p><br>
+1 × 8^1 + 5 × 8^0 = 8 + 5 = 13<br>
+<h4>Hexadécimal vers Décimal</h4>
+<p>La conversion d'un nombre hexadécimal en décimal utilise 16 comme base. Par exemple, pour convertir D en décimal :</p><br>
+D = 13 × 16^0 = 13<br>
+Ces principes de conversion peuvent être appliqués de manière similaire pour d'autres nombres.
+  <h2>Astuces et Remarques</h2>
+            <p>Les chiffres hexadécimaux vont de 0 à 15. Les chiffres au-delà de 9 sont représentés par les lettres A (10), B (11), C (12), D (13), E (14) et F (15).</p>
+            <p>Les conversions entre bases peuvent également être effectuées à l'aide de calculatrices ou de logiciels informatiques.</p>
+            <p>Lorsque vous travaillez avec des bases plus élevées, il est utile de connaître les puissances de la base. Par exemple, 16^0 = 1, 16^1 = 16, 16^2 = 256, etc.</p>
+            <p>Ces concepts vous permettront de convertir des nombres entre les bases décimale, binaire, octale et hexadécimale. N'hésitez pas à pratiquer avec différents nombres pour renforcer votre compréhension.</p>
+<p></p>
+        </section>
+
+        <section class="conversion-example">
+            <h2>Exemple de conversion</h2>
+            <p>Exemple : Convertir le nombre octal<strong>345</strong> décimal, hexadécimal et binaire.</p>
+
+            <div class="conversion-form">
+                <label for="numberInput">Entrer un nombre:</label>
+                <input type="text" id="numberInput" value="" placeholder="Enter number">
+
+
+                <button onclick="convertNumbers()">Convert</button>
+
+                <div class="results">
+                    <label for="decimalResult">Result (Decimal):</label>
+                    <input type="text" id="decimalResult"><br>
+
+                    <label for="hexResult">Result (Hexadecimal):</label>
+                    <input type="text" id="hexResult"><br>
+
+                    <label for="binaryResult">Result (Binary):</label><br>
+                    <input type="text" id="binaryResult"><br>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2024 Number Conversion Lesson
+    </footer>
+
+    <script>
+	function convertNumbers() {
+    var numberInput = document.getElementById('numberInput').value;
+
+    // Convert to decimal
+    var decimalResult = parseInt(numberInput, 8);
+
+    // Convert to hexadecimal
+    var hexResult = decimalResult.toString(16).toUpperCase();
+
+    // Convert to binary
+    var binaryResult = decimalResult.toString(2);
+
+    document.getElementById('decimalResult').value = decimalResult;
+    document.getElementById('hexResult').value = hexResult;
+    document.getElementById('binaryResult').value = binaryResult;
+}
+</script>
+
+
+
+</body>
